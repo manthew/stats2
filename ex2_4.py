@@ -7,8 +7,14 @@ data_t = np.random.standard_t(2, size=(20,200))
 
 
 # Calculate the mean and median and plot axarr
-fig1, ax1 = plt.subplots()
-fig2, ax2 = plt.subplots()
+fig, (ax1, ax2) = plt.subplots(2, sharex = True)
+fig.suptitle('Sheet 2 Exercise 4')
+ax2.set_ylim([-1, 1])
+ax1.set_ylim([-1, 1])
+ax1.set_title("Mean")
+plt.axhline(y=0, color='black')
+ax2.set_title("Median")
+plt.axhline(y=0, color='black')
 
 for j in range(len(data_t)):
 	Mean = np.array([])
@@ -19,11 +25,7 @@ for j in range(len(data_t)):
 	ax1.plot(Mean, linewidth=1.0)
 	ax2.plot(Median, linewidth=1.0)
 
-#plot
-ax2.set_ylim([-1, 1])
-ax1.set_ylim([-1, 1])
-ax1.set_title("Mean")
-ax2.set_title("Median")
+
 
 print(data_t)
 plt.show()
