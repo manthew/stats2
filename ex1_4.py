@@ -15,5 +15,6 @@ for j in range(len(data)):
 
 plt.axhline(y=0, color='black')
 plt.ylim(-0.05, 0.1)
+plt.savefig('foo.eps')
+plt.show()
 
-print(to_plot)
