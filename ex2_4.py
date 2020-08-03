@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Create data
-data_t = np.random.standard_t(2, size=(20,200))
+data_t = np.random.standard_t(2, size=(2000,20000))
 
 
 
