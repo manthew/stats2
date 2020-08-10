@@ -25,7 +25,6 @@ for j in range(len(data_t)):
 	ax1.plot(Mean, linewidth=1.0)
 	ax2.plot(Median, linewidth=1.0)
 
-	
 plt.savefig('darling.png')
 
 
